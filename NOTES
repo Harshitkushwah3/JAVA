@@ -1,1 +1,65 @@
 Java :- 
+        
+        It is a popular programming language, created in 1995.
+        It is owned by Oracle, and more than 3 billion devices run Java.
+        It is used for:
+            Mobile applications (specially Android apps)
+            Desktop applications
+            Web applications
+            Web servers and application servers
+            Games
+            Database connection
+            And much, much more!
+
+Comments in Java :-
+
+        .Single line comments :- 
+                Single-line comments start with two forward slashes (//).
+                Any text between // and the end of the line is ignored by Java.
+
+        . Multiline Comments:- 
+                Multi-line comments start with /* and ends with */.
+                Any text between /* and */ will be ignored by Java.
+
+Java Variables:-
+
+        Variables are containers for storing data values.
+        In Java, there are different types of variables, for example:
+            String - stores text, such as "Hello". String values are surrounded by double quotes
+            int - stores integers (whole numbers), without decimals, such as 123 or -123
+            float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+            char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+            boolean - stores values with two states: true or false
+
+
+JVM, JRE, JDK :-
+        (Java Virtual Machine - Specification)
+        (Java Runtime Environment - It is the implementation of JVM)
+        (Java Development Kit - Kit that contaion Development tools, JRE)
+
+
+OPERATORS :- 
+
+        Ranks:- 
+                1. Brackets
+                2. Divide / Multiply :- system run according to the position of it in the code.
+                3. Addition / Subtraction :- system run according to the position of it in the code.
+
+
+TAKING INPUT AND OUTPUT
+        OUTPUT :- 
+                System.out.println("Hello World");
+                System.out.println(3+3);
+                System.out.println(15*6);
+        INPUT :-
+                Scanner scn = new Scanner(System.in);
+                int n=scn.nextInt();
+                e.g.
+                import java.util.Scanner;
+                class studnet {
+                  public static void main(String[] args) {
+                    Scanner scn = new Scanner(System.in);
+                        int n=scn.nextInt();
+                        System.out.println("hii"+n);    
+                }
+        }
