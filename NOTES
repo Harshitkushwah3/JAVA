@@ -63,3 +63,263 @@ TAKING INPUT AND OUTPUT
                         System.out.println("hii"+n);    
                 }
         }
+ IF AND ELSE 
+        if(condition){
+                //code
+        }
+        else{
+                //code
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int n=scn.nextInt();
+                if(n%2==0){
+                        System.out.println("even");
+                }
+                else{
+                        System.out.println("odd");
+                }
+        }
+        }
+        else if(condition){
+                //code
+        }
+        else{
+                //code
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int n=scn.nextInt();
+                if(n%2==0){
+                        System.out.println("even");
+                }
+                else if(n%2==1){
+                        System.out.println("odd");
+                }
+                else{
+                        System.out.println("invalid");
+                }
+        }
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int n=scn.nextInt();
+                if(n%2==0){
+                        System.out.println("even");
+                }
+                else if(n%2==1){
+                        System.out.println("odd");
+                }
+                else if(n%2==2){
+                        System.out.println("even");
+                }
+                else if(n%2==3){
+                        System.out.println("odd");
+                }
+                else{
+                        System.out.println("invalid");
+                }
+        }
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int n=scn.nextInt();
+                if(n%2==0){
+                        System.out.println("even");
+                }
+                else if(n%2==1){
+                        System.out.println("odd");
+                }
+                else if(n%2==2){
+                        System.out.println("even");
+                }
+                else if(n%2==3){
+                        System.out.println("odd");
+                }
+                else if(n%2==4){
+                        System.out.println("even");
+                }
+                else if(n%2==5){
+                        System.out.println("odd");
+                }
+                else{
+                        System.out.println("invalid");
+                }
+        }
+        }
+
+
+FOR LOOP :
+        for(int i=0;i<10;i++){
+                //code
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                for(int i=0;i<10;i++){
+                        System.out.println(i);
+                }
+        }
+        }
+
+WHILE LOOP :
+        while(condition){
+                //code
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int i=0;
+                while(i<10){
+                        System.out.println(i);
+                        i++;
+                }
+        }
+        }
+
+DO WHILE LOOP :
+        do{
+                //code
+        }while(condition);
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int i=0;
+                do{
+                        System.out.println(i);
+                        i++;
+                }while(i<10);
+        }
+        }
+
+SWITCH CASE :
+        switch(expression){
+                case 1:
+                        //code
+                        break;
+                case 2:
+                        //code
+                        break;
+                default:
+                        //code
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int i=0;
+                switch(i){
+                        case 1:
+                                System.out.println("one");
+                                break;
+                        case 2:
+                                System.out.println("two");
+                                break;
+                        default:
+                                System.out.println("invalid");
+                }
+        }
+        }
+
+ARRAYS :
+        int[] arr = new int[5];
+        int[] arr = {1,2,3,4,5};
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int[] arr = {1,2,3,4,5};
+                for(int i=0;i<arr.length;i++){
+                        System.out.println(arr[i]);
+                }
+        }
+        }
+
+FUNCTIONS :
+        public static void name(){
+                //code
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                name();
+        }
+        public static void name(){
+                System.out.println("hii");
+        }
+}
+
+FUNCTIONS WITH PARAMETERS :
+        public static void name(int a){
+                //code
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                name(5);
+        }
+        public static void name(int a){
+                System.out.println(a);
+        }
+}
+
+FUNCTIONS WITH RETURN TYPE :
+        public static int name(int a){
+                //code
+                return a;
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int a=name(5);
+                System.out.println(a);
+        }
+        public static int name(int a){
+                return a;
+        }
+}
+
+FUNCTIONS WITH PARAMETERS AND RETURN TYPE :
+        public static int name(int a){
+                //code
+                return a;
+        }
+        e.g.
+        import java.util.Scanner;
+        class studnet {
+          public static void main(String[] args) {
+            Scanner scn = new Scanner(System.in);
+                int a=name(5);
+                System.out.println(a);
+        }
+        public static int name(int a){
+                return a;
+        }
+}
+ 
