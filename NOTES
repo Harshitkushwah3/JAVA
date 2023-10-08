@@ -11,6 +11,12 @@ Java :-
             Database connection
             And much, much more!
 
+Package :- All related code stored in packages so that it can be eaily accessed.
+        e.g. :- in the library all books are stored in different sections so that it can be eaily accessed.
+                like all history books in one section and all science books in one section.
+                syntax:- Package com.packagename;
+                
+
 Comments in Java :-
 
         .Single line comments :- 
@@ -60,6 +66,7 @@ TAKING INPUT AND OUTPUT
                   public static void main(String[] args) {
                     Scanner scn = new Scanner(System.in);
                         int n=scn.nextInt();
+                        String name=scn.nextLine();
                         System.out.println("hii"+n);    
                 }
         }
