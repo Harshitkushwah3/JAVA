@@ -88,7 +88,49 @@ public static void main(String[] args){
     int n=5;
     for (int i=1;i<=n;i++){
         for (int j=1;j<=i;j++){
-            System.out.print(j);
+            System.out.print(j+" ");
+        }
+        System.out.println();
+    }
+}
+*/
+
+//PRINT NUMBER IN INVERTED TRIANGLE
+
+/* 
+public static void main(String[] args){
+    int n=5;
+    for (int i=n;i>=1;i--){
+        for (int j=1;j<=i;j++){
+            System.out.print(j+" ");
+        }
+        System.out.println();
+    }
+}
+
+OR
+
+public static void main(String[] args){
+    int n=5;
+    for (int i=1;i<=n;i++){
+        for(int j=1;j<=n-i+1;j++){
+            System.out.print(j+" ");
+        }
+        System.out.println();   
+     }
+}
+*/
+
+//FLOYD'S TRIANGLE
+
+/* 
+public static void main(String[] args){
+    int n=5;
+    int num=1;
+    for (int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            System.out.print(num+" ");
+            num++;
         }
         System.out.println();
     }
@@ -97,17 +139,21 @@ public static void main(String[] args){
 
 //PRINT 1 0 PATTERN
 
+/* 
 public static void main(String[] args){
     int n=5;
     for (int i=1;i<=n;i++){
         for (int j=1;j<=i;j++){
             if ((i+j)%2==0){
-                System.out.print("1");
+                System.out.print("1" + " ");
             }
             else{
-                System.out.print("0");
+                System.out.print("0" + " ");
             }
         }
         System.out.println();
     }
 }
+*/
+ 
+}  
