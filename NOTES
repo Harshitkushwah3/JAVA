@@ -263,6 +263,20 @@ ARRAYS :
         }
 
 FUNCTIONS :
+        It is a block of code that performs a specific task.
+        It is executed when it is called.
+        It is used to break large programs into smaller ones.
+        It makes the code reusable.
+        It makes the code easier to understand.
+        It is used to avoid repetition in the program.
+        It is used to eliminate the redundant code.
+        It is used to improve the readability of the program.
+        It is used to reduce the length of the program.\
+        It is used to reduce the complexity of the program.
+
+FUNCTIONS WITHOUT PARAMETERS :
+
+
         public static void name(){
                 //code
         }

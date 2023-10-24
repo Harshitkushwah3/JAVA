@@ -37,8 +37,61 @@ int n=scn.nextInt();
   }
 }
 
-class array{
-  public static void main(String[] args){
-
+class name{
+  public static void PrintMyName(String name){
+    System.out.println(name);
+    return;
+  }
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    String name=scn.next();
+    System.out.println("Hello World");
+    PrintMyName(name);
   }
 }
+
+class sum{
+  public static int sum(int a, int b){
+    System.out.println(a+b);
+    return 0;
+  }
+  public static void main(String[]args){
+    Scanner scn =new Scanner(System.in);
+    int a=scn.nextInt();
+    int b=scn.nextInt();
+    int sum=a+b;
+    System.out.println(sum);
+     
+  }
+}
+
+class prod{
+  public static int prod(int a,int b){
+    return a*b;
+  }
+  public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    int a=scn.nextInt();
+    int b=scn.nextInt();
+    System.out.println(prod(a,b));
+  }}
+
+
+class facto{
+    public static int facto(int n){
+      if( n<=0){
+        System.out.println("invalid input");
+        return 0;
+      }
+      int fact=1;
+      for (int i=1;i<=n;i++){
+        fact=fact*i;
+      }
+      return fact;
+    }
+    public static void main(String[] args){
+      Scanner sc = new Scanner(System.in);
+      int n=sc.nextInt();
+      System.out.println(facto(n));
+    }
+  }
