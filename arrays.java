@@ -8,7 +8,7 @@
 
  import java.util.*;
 
-class array{
+class arrays{
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
@@ -27,7 +27,7 @@ class array{
 
     //EXAMPLE
 
-    class search{
+class search{
         public static void main (String[]args){
             Scanner sc=new Scanner(System.in);
             int n=sc.nextInt();
