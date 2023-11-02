@@ -43,6 +43,14 @@ JVM, JRE, JDK :-
         (Java Runtime Environment - It is the implementation of JVM)
         (Java Development Kit - Kit that contaion Development tools, JRE)
 
+TYPECASTING :-
+        Converting one datatype to another datatype.
+        e.g. int a=5;
+                double b=a; //implicit typecasting
+                double b=(double)a; //explicit typecasting
+                int a=(int)5.6f; //explicit typecasting
+                
+
 
 OPERATORS :- 
 
