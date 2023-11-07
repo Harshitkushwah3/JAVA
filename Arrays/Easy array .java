@@ -1,112 +1,11 @@
-/*
- DEFINING ARRAY
-
- type[] arrayName = new type[size];
-    e.g. 
-        int[] arr = new int[3];
- */
-
- import java.util.*;
-
-class arrays{
-    public static void main(String[]args){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int marks[]=new int[n];
-
-        // marks[0]=10;    //defined values
-        // marks[1]=20;
-        // marks[2]=30;
-        for (int i=0;i<n;i++){
-            marks[i]=sc.nextInt();
-        }
-        for (int i=0;i<n;i++){
-            System.out.print(marks[i] +" ");
-        }
-    }}
-
-    //EXAMPLE
-
-class search{
-        public static void main (String[]args){
-            Scanner sc=new Scanner(System.in);
-            int n=sc.nextInt();
-            int arr[]=new int[n];
-            for(int i=0;i<n;i++){
-                arr[i]=sc.nextInt();
-            }
-             int a=sc.nextInt();
-            for (int i=0;i<arr.length;i++){
-                if (a==arr[i])
-                {
-                    System.out.println("found at index " + i );
-                    break;
-                }
-            }
-        }
-    }
-
-// 2D ARRAYS
-/*
-DEFINING 2D ARRAY
-        type[][] array_name = new type[rows][columns];
-        e.g.
-            int[][] arr = new int[3][3];
-*/
-
-class Two_Darray{
-    public static void main(String []args){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int m=sc.nextInt();
-        int arr[][]=new int[n][m];
-        //input of 2d array
-        for (int i=0;i<n;i++){
-            for (int j=0;j<m;j++){
-                arr[i][j]=sc.nextInt();
-            }
-        }
-        //output of 2d array
-        for (int i=0;i<n;i++){
-            for (int j=0;j<m;j++){
-                System.out.print(arr[i][j] +" ");
-            }
-            System.out.println();
-        }
-    }
-}
-
-// example 
-
-class two_d_search{
-    public static void main(String[]args){
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int arr[][]=new int[a][b];
-        for (int i=0;i<a;i++){
-            for (int j=0;j<b;j++){
-                arr[i][j]=sc.nextInt();
-            }
-        }
-        int c=sc.nextInt();
-        for(int i=0;i<a;i++){
-            for (int j=0;j<b;j++){
-                if (c==arr[i][j]){
-                    System.out.println("found at index " + i + " " + j);
-                    break;
-                }
-            }
-        }
-
-    }
-} 
-
+package Arrays;
+import java.util.Scanner;
+import java.util.*;
 /*
  EASY JAVA ARRAY QUESTIONS 
 */
 
-// 1. Build Array from Permutation
+// 1. Build Array from Permutation (Leetcode - 1920)
 class Permutation{
     public static void main(String[] args){
         Scanner sc=new Scanner (System.in);
@@ -128,7 +27,7 @@ class Permutation{
     }
 }
 
-// 2. Concatenation of Array
+// 2. Concatenation of Array ( Leetcode - 1929 )
 class Concatenation{
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -161,7 +60,7 @@ class Concatenation{
     }
 }
 
-// 3. Running Sum of 1d Array
+// 3. Running Sum of 1d Array (Leetcode - 1480)
 class runsum{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -183,7 +82,7 @@ class runsum{
     }
 }
 
-// 4. Richest Customer Wealth
+// 4. Richest Customer Wealth (Leetcode - 1672)
 class wealth{
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -213,7 +112,7 @@ class wealth{
     }
 }
 
-// 5. Shuffle the Array
+// 5. Shuffle the Array (Leetcode - 1470)
 class Shuffle{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -236,7 +135,7 @@ class Shuffle{
     }
 }
 
-// 6. Kids With the Greatest Number of Candies
+// 6. Kids With the Greatest Number of Candies (Leetcode - 1431)
 class maxcandy{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -292,7 +191,7 @@ class Solution {
 }
 */
 
-// 7. Number of Good Pairs
+// 7. Number of Good Pairs (Leetcode - 1512)
 class pairs{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -314,7 +213,7 @@ class pairs{
     }
 }
 
-// 8. How Many Numbers Are Smaller Than the Current Number
+// 8. How Many Numbers Are Smaller Than the Current Number (Leetcode - 1365)
 class small{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -341,7 +240,7 @@ class small{
     }
 }
 
-// 9. Create Target Array in the Given Order
+// 9. Create Target Array in the Given Order (Leetcode - 1389 )
 class order{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -355,15 +254,11 @@ class order{
             index[i]=sc.nextInt();
         }
         int ans[]=new int [n]; // defining ans array
-        for (int i=0;i<n;i++){
-            ans[i]=arr[i]; // defining ans array w.r.t arr
-        }
-        for (int i=0;i<n;i++){ // swapping
-            if (index[i]!=i){ // if index[i] is not equal to i then swap
-                int temp=ans[i]; // swapping
-                ans[i]=ans[index[i]]; // swapping
-                ans[index[i]]=temp; // swapping
+        for(int i=0;i<arr.length;i++){
+            for(int j=ans.length-1;j>index[i];j--){
+                ans[j]=ans[j-1];
             }
+            ans[index[i]]=arr[i];
         }
         System.out.println("The target array is ");
         for (int i=0;i<n;i++){
@@ -373,4 +268,41 @@ class order{
     }
 }
 
-//
+// 10. Check if the Sentence Is Pangram (Leetcode - 1832)
+class senpal{
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        String s=sc.nextLine();
+        int arr[]=new int [26];
+        for (int i=0;i<s.length();i++){
+            arr[s.charAt(i)-'a']++;
+        }
+        for (int i=0;i<26;i++){
+            if (arr[i]==0){
+                System.out.println("false");
+                break;
+            }
+            else{
+                System.out.println("true");
+                break;
+            }
+        }
+}
+}
+/* OR */
+ class senpal2{
+    public boolean checkIfPangram(String sentence) {
+        boolean[] arr = new boolean[26];
+        for(int i = 0; i < sentence.length(); i++){
+            arr[sentence.charAt(i) - 'a']=true;
+        }
+        for(boolean i : arr){
+            if(!i){
+                return false;
+            }
+        }
+        return true;
+    }
+ }
+
+
