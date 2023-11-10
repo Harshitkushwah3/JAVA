@@ -287,9 +287,12 @@ class senpal{
                 break;
             }
         }
+    }
 }
-}
+
 /* OR */
+
+/*
  class senpal2{
     public boolean checkIfPangram(String sentence) {
         boolean[] arr = new boolean[26];
@@ -303,6 +306,91 @@ class senpal{
         }
         return true;
     }
- }
+}
+*/
+
+// 11. Count Items Matching a Rule (Leetcode - 1773)
+class match{ // USER INPUT
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        String arr[][]=new String[n][3];
+        for (int i=0;i<n;i++){
+            for (int j=0;j<3;j++){
+                arr[i][j]=sc.next();
+            }
+        }
+        String ruleKey=sc.next();
+        String ruleValue=sc.next();
+        int count=0;
+        for (int i=0;i<n;i++){
+            if (ruleKey.equals("type") && ruleValue.equals(arr[i][0])){
+                count+=1;
+            }
+            else if (ruleKey.equals("color") && ruleValue.equals(arr[i][1])){
+                count+=1;
+            }
+            else if (ruleKey.equals("name") && ruleValue.equals(arr[i][2])){
+                count+=1;
+            }
+        }
+        System.out.println("The number of matching items are " + count);
+    }
+}
+/* OR */
+/*
+class Solution { // LEETCODE SOLUTION
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+        int count=0;
+        if(ruleKey.equals("type")){
+            for (int i=0;i<items.size();i++){
+                if(items.get(i).get(0).equals(ruleValue))
+                {
+                    count++;
+                }
+            }
+        }
+        else if(ruleKey.equals("color")){
+            for (int i=0;i<items.size();i++){
+                if(items.get(i).get(1).equals(ruleValue))
+                {
+                    count++;
+                }
+            }
+        }
+        else {
+            for (int i=0;i<items.size();i++){
+                if(items.get(i).get(2).equals(ruleValue))
+                {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    
+} 
+*/
 
 
+// 12. Find the Highest Altitude (Leetcode - 1732)
+class altitude{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int [n+1];
+        for (int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        arr[n]=0;
+        int sum=0;
+        int max=0;
+        for (int i=0;i<n+1;i++){
+            sum+=arr[i];
+            if (sum>max){
+                max=sum;
+            }
+        }
+        System.out.println("The highest altitude is " + max);
+    }
+}
