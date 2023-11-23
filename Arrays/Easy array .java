@@ -394,3 +394,78 @@ class altitude{
         System.out.println("The highest altitude is " + max);
     }
 }
+
+
+// 13. Flipping an Image (Leetcode - 832)
+/*
+class flip{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[][]=new int [n][n];
+        for(int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<n;i++){
+            for (int j=0;j<(n+1)/2;j++){
+                int temp=arr[i][j];
+                arr[i][j]=arr[i][n-1-j];
+                arr[i][n-1-j]=temp;
+            }
+        }
+        for(int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                if (arr[i][j]==0){
+                    arr[i][j]=1;
+                }
+                else{
+                    arr[i][j]=0;
+                }
+            }
+        }
+        System.out.println("The flipped image is ");
+        for(int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+
+/* OR */
+
+class flip{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[][]=new int [n][n];
+        for(int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<n;i++){
+            for (int j=0;j<(n+1)/2;j++){
+                int temp=arr[i][j] ^ 1;
+                arr[i][j]=arr[i][n-1-j] ^ 1;
+               arr[i][n-1-j]=temp;
+            }
+        }
+        System.out.println("The flipped image is ");
+        for(int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+// 14. Cells with Odd Values in a Matrix
+class matrix{
+    
+}
