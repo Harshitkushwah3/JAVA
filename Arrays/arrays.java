@@ -48,7 +48,7 @@ class search{
     }
 
 // 2D ARRAYS
-/*
+/*z
 DEFINING 2D ARRAY
         type[][] array_name = new type[rows][columns];
         e.g.
