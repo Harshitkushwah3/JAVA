@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Driver",
+            "request": "launch",
+            "mainClass": "ParcticeKG.Driver",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "var_method",
+            "request": "launch",
+            "mainClass": "ParcticeKG.var_method",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "array_prc",
+            "request": "launch",
+            "mainClass": "ParcticeKG.array_prc",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "LCM",
             "request": "launch",
             "mainClass": "ParcticeKG.LCM",

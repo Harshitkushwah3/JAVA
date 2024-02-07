@@ -1,0 +1,62 @@
+OOPS IN JAVA
+
+1. PROCESS VS OBJECT ORIENTED
+    - Process is a collection of instructions executed by the computer, while an object is an instance of a class in Object Oriented Programming (OOP). 
+    
+
+2. INSTANCE VARIABLE AND METHODS
+    -Instance variables in Java are non-static variables which are defined in a class outside any method, constructor or a block.
+
+    -Instance methods are methods that are declared within a class but outside any other method or block
+
+    -class properties called instance variable and method is called as instance method 
+
+/*
+    example:- 
+    class Person {
+    // Instance variable
+    String name;
+
+    // Instance method
+    void printName() {
+        System.out.println(name);
+    }
+    }
+
+    // Create an object of the Person class
+    Person p = new Person();
+
+    // Set the name of the object
+    p.name = "John Doe";
+
+    // Call the printName() method
+    p.printName();
+
+*/
+
+3. DECLARING OBJECTS
+    
+    -Object Creation:= new instantiates a new object of a class.
+    -Memory Allocation:= Allocates memory for the object in the heap.
+    -Constructor Invocation:= Calls the class constructor to initialize the object.
+    -Reference Return:= Returns a reference to the created object.
+    -Array Creation:= Also used for creating arrays, like int[] arr = new int[5];.
+    -Dynamic Allocation:= Unlike static allocation, new allows for dynamic memory allocation ,allocating memory at runtime
+
+    SYNTAX => 
+        Student student1 =new Student() 
+        |        |         |      |
+        |        |         |      |
+        ^        ^         ^      ^
+       (Class   (Object  (Key    (Constructor)
+        Name)    Name    word)
+                   or
+                Reference)
+       |                  | |   | |           |
+       |__________________| |___| |___________|          
+                |             |          |
+                ^             ^          ^
+        (Declaration) (Instantiation)  (Initialization)
+
+        here student1 is reference variable of Student Type
+        new is Java Keyword to instantiation of a class 
