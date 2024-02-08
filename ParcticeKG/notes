@@ -44,12 +44,12 @@ OOPS IN JAVA
     -Dynamic Allocation:= Unlike static allocation, new allows for dynamic memory allocation ,allocating memory at runtime
 
     SYNTAX => 
-        Student student1 =new Student() 
-        |        |         |      |
-        |        |         |      |
-        ^        ^         ^      ^
-       (Class   (Object  (Key    (Constructor)
-        Name)    Name    word)
+        Student student1 = new Student() 
+        |        |          |       |
+        |        |          |       |
+        ^        ^          ^       ^
+       (Class   (Object    (Key    (Constructor)
+        Name)    Name      word)
                    or
                 Reference)
        |                  | |   | |           |
@@ -57,6 +57,91 @@ OOPS IN JAVA
                 |             |          |
                 ^             ^          ^
         (Declaration) (Instantiation)  (Initialization)
-
+ 
         here student1 is reference variable of Student Type
         new is Java Keyword to instantiation of a class 
+
+
+4. CLASS VS OBJECT
+
+    -In Java, a class is a blueprint or template that defines the properties    and behaviors of objects. An object is an instance of a class that has actual values for those properties.
+    
+    -Classes are used to create objects, which are instances of that class. For example, you might have a class called "Car" that defines the properties and behaviors of cars. You could then create objects of the "Car" class to represent specific cars.
+
+
+
+5. THIS KEYWORD
+
+    -this refers to the current object in a method or constructor. It is used to access the instance variables and methods of the current object. It is also used to pass the current object as an argument to another method.
+
+6.  STATIC KEYWORD
+    
+    -The static keyword in Java is used to declare a class member that is shared by all instances of the class. Static members are also called class members. Static members can be variables, methods, blocks, and nested classes.
+
+    - It belong to the class not individual instances and can be called without creating an object.
+
+    --Here are some of the key points to remember about the static keyword in Java:
+        Static variables are shared by all instances of the class.
+        Static methods can be called without creating an instance of the class.
+        Static blocks are executed when the class is loaded into memory.
+        Nested classes can be static or non-static.
+
+
+7. CONSTRUCTOR
+    
+    -A constructor in Java is a special type of method that is used to initialize objects. The constructor is automatically called when an object of a class is created. It can be used to set initial values for object attributes.
+    
+    -Constructors have the same name as the class they belong to and they do not have a return type. Constructors can also take parameters, which is used to initialize attributes.
+
+    example
+    
+    import java.io.*;
+ 
+    // Driver Class
+    class Geeks {
+       
+        // Constructor
+        Geeks()
+        {
+            super();
+            System.out.println("Constructor Called");
+        }
+     
+        // main function
+        public static void main(String[] args)
+        {
+            Geeks geek = new Geeks();
+        }
+    }
+
+    - Type of it
+
+        => Default Constructor: If no constructor is
+        explicitly defined, Java provides a
+        default constructor that initializes all
+        member variables to default values.
+
+        => Parameterized Constructors:
+        Constructors can have parameters to
+        pass values when creating an object,
+        allowing for different initializations. 
+
+        car(String color){ // here we define that the color defining is mandotory for accessing the  car object
+            this.color=color;
+            no_of_seats = 4 ;
+
+        }
+
+    => Constructor Chaining
+        we can define more than 1 constructor of same class and call one constructor from another using "this()" keyword
+        
+
+8. CODE BLOCK
+
+    1. Scope: Code blocks {} determine the scope of variables.  
+    2. Local Variables: Variables inside a block are not accessible 
+    outside it.
+    3. Initialization Block: Blocks without static run each time an 
+    instance is created.
+    4. Static Block: Blocks with static run once when the class is 
+    loaded.
