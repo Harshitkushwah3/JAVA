@@ -145,3 +145,35 @@ OOPS IN JAVA
     instance is created.
     4. Static Block: Blocks with static run once when the class is 
     loaded.
+
+9. HEAP MEMORY AND STACK MEMORY
+
+    -The major difference between Stack memory and heap memory is that the stack is used to store the order of method execution and local variables while the heap memory stores the objects and it uses dynamic memory allocation and deallocation.
+
+9. VARIABLE SCOPE
+
+    -the variable scope in java is divided into two parts-
+     1) local variable (declared within methods or constructors)
+     2) non-local variable (declared outside methods or constructors).
+
+10. GARBAGE COLLECTION AND FINALIZE
+/*
+    1=> Automatic Process: Garbage collection is managed by the Java Virtual Machine (JVM), running in the background.
+    
+    2=> Object Eligibility: Objects that are no longer reachable, meaning no active references to them, are eligible for garbage collection.
+    
+    3=> No Manual Control: Unlike languages like C++, Java developers cannot explicitly deallocate memory. Garbage collection is automatic and non-deterministic.
+    
+    4=> Generational Collection: Java uses a generational garbage collection strategy, which divides memory into different regions (young, old, and permanent generations) based on object ages.
+    
+    5=> Heap Memory: Garbage collection occurs in the heap memory, where all Java objects reside.
+    
+    6=> Performance Impact: Garbage collection can affect application performance, particularly if it runs frequently or takes a long time to complete.
+*/
+/*
+    1=> Finalization: Before an object is garbage collected, the finalize() method may be called, giving the object a chance to clean up resources. However, it's not guaranteed to run, and its usage is generally discouraged.
+
+    2=> Optimization: Developers can optimize the process indirectly through code practices, like setting unnecessary object references to null.
+    
+    3=> System.gc() Call: While System.gc() suggests that the JVM performs garbage collection, it's not a guarantee.
+*/
