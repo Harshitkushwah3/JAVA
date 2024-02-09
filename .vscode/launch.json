@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "foreachloop",
+            "request": "launch",
+            "mainClass": "ParcticeKG.foreachloop",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "forloop",
+            "request": "launch",
+            "mainClass": "ParcticeKG.forloop",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "doWhile",
+            "request": "launch",
+            "mainClass": "ParcticeKG.doWhile",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "switcc",
+            "request": "launch",
+            "mainClass": "ParcticeKG.switcc",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "ternary",
             "request": "launch",
             "mainClass": "ParcticeKG.ternary",

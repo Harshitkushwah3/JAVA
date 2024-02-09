@@ -1,3 +1,4 @@
+/*
 package ParcticeKG;
 
 import java.util.Scanner;
@@ -18,3 +19,4 @@ public class ArrayUtility {
         return arr;
     }
 }
+*/
