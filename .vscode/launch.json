@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ternary",
+            "request": "launch",
+            "mainClass": "ParcticeKG.ternary",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "Driver",
             "request": "launch",
             "mainClass": "ParcticeKG.Driver",

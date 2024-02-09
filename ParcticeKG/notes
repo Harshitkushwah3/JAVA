@@ -177,3 +177,47 @@ OOPS IN JAVA
     
     3=> System.gc() Call: While System.gc() suggests that the JVM performs garbage collection, it's not a guarantee.
 */
+
+11.  PRIMITIVE VS REFERENCE TYPE
+
+    PRIMITIVE STORED IN STACK WHILE NON-PRIMITE STROE IN HEAP (REFERENCE) MEMORY
+
+                  A=> NUMERIC==> 1. INTEGER   2. FLOATING POINT
+    PRIMITIVE ==>|
+                  B=> NON-NUMERIC==> 1. CHARACTER 2. BOOLEAN
+
+    
+    NON-PRIMITIVE==> 1. CLASS
+                     2. ARRAY
+                     3. INTERFACE
+                     4. OBJECT
+                     5. STRING
+
+
+  = Primitive store actual value while reference store address of that value.
+  = Primitive store values in stack but reference type store in the heap.
+  = Primitive have specific values like 0 or false ; reference type default to null.
+  = Primitive compared by values ; reference types compared by reference.
+  = Access to primitive is faster.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+12. CONTROL STATEMENTS, MATHS & STRINGS
+
+    Ternary operator :
+        Syntax => condition ? expression1 : expression2
+        Condition => Boolean expression, evaluates to true or false.
+        Expressions => Both expressions must return compatible types.
+        Use Case => Suitable for simple conditional assignments.
+        Readability => Good for simple conditions, but can reduce clarity if overused.
+
+    Switch :
+
+        Multiple Cases => Handles multiple values for an expression efficiently.
+        Supported Types => Accepts byte, short, char, int, String, enums, and from Java 14, long, float, double.
+        Case Labels => Each case ends with a colon (:) and is followed by code.
+        Break Statement => Typically used to prevent fall-through between cases.
+        Default Case => Executes if no case matches; optional and doesn't require break.
+        Type Safety => Case label types must match the switch expression's type. 
+
+        
