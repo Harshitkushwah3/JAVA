@@ -255,3 +255,31 @@ OOPS IN JAVA
     3. Recursive Case: The part where the function makes a recursive call.
     4. Stack Overflow Risk: Excessive recursion can cause stack overflow errors.
     5. Problem Solving: Ideal for problems divisible into similar, smaller problems.
+
+
+17. RANDOM NUMBER AND MATH CLASS
+               
+    1. Static Class: Math methods are static and accessed directly.
+    2. Constants: Includes PI and E for π and the base of natural logarithms.
+
+    Key Methods:
+
+    1.  abs(): Absolute value.
+    2.  ceil(): Rounds up.
+    3.  floor(): Rounds down.
+    4.  round(): Rounds to nearest integer.
+    5.  max(), min(): Maximum and minimum of two numbers.
+    6.  pow(): Power calculation.
+    7.  sqrt(): Square root.
+    8.  random(): Random number generation.
+    9.  exp(), log(): Exponential and logarithmic functions.
+    10. Trigonometric functions: sin(), cos(), tan().
+
+
+18. toString() METHOD
+
+    1. Function: toString() provides a string representation of an object.
+    2. Inheritance: It's inherited from the Object class.
+    3. Default Format: By default, returns class name, "@", and hashcode.
+    4. Overriding: Commonly overridden in custom classes for meaningful output.
+    5. Implicit Call: Automatically called in string concatenation.

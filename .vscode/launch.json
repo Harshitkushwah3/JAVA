@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "car",
+            "request": "launch",
+            "mainClass": "ParcticeKG.car",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "rd_math",
+            "request": "launch",
+            "mainClass": "ParcticeKG.rd_math",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "password",
+            "request": "launch",
+            "mainClass": "ParcticeKG.password",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
+            "name": "recurse",
+            "request": "launch",
+            "mainClass": "ParcticeKG.recurse",
+            "projectName": "JAVA_72d9c41b"
+        },
+        {
+            "type": "java",
             "name": "foreachloop",
             "request": "launch",
             "mainClass": "ParcticeKG.foreachloop",
