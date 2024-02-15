@@ -283,3 +283,15 @@ OOPS IN JAVA
     3. Default Format: By default, returns class name, "@", and hashcode.
     4. Overriding: Commonly overridden in custom classes for meaningful output.
     5. Implicit Call: Automatically called in string concatenation.
+
+
+19. SRING CLASS
+
+    1. Immutability: Once created, a String object's value cannot be changed. Modifications create new String objects.
+    2. String Pool: Java maintains a pool of strings for efficiency. When a new string is created, it's checked against the pool for a match to reuse.
+    3. Comparing: equals() method for value comparison, == operator checks reference equality.
+
+
+    1. Concatenation: Strings can be concatenated using the + operator, but each concatenation creates a new String.
+    2. Methods: Provides methods like length(), substring(), equals(), compareTo(), indexOf(), for various operations.
+    3. Memory: Being immutable, strings can use more memory when frequently modified.

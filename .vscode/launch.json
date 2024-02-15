@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "fact",
+            "request": "launch",
+            "mainClass": "ParcticeKG.fact",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "sum",
+            "request": "launch",
+            "mainClass": "ParcticeKG.sum",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "car",
             "request": "launch",
             "mainClass": "ParcticeKG.car",
