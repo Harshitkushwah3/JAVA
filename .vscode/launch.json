@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "jc",
+            "request": "launch",
+            "mainClass": "ParcticeKG.jc",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "sb",
+            "request": "launch",
+            "mainClass": "ParcticeKG.sb",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "StringF",
+            "request": "launch",
+            "mainClass": "ParcticeKG.StringF",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "car",
+            "request": "launch",
+            "mainClass": "ParcticeKG.car",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Sstring",
+            "request": "launch",
+            "mainClass": "ParcticeKG.Sstring",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "fact",
             "request": "launch",
             "mainClass": "ParcticeKG.fact",

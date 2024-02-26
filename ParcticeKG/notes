@@ -269,7 +269,7 @@ OOPS IN JAVA
     3.  floor(): Rounds down.
     4.  round(): Rounds to nearest integer.
     5.  max(), min(): Maximum and minimum of two numbers.
-    6.  pow(): Power calculation.
+    6.  pow(): Power calculation. 
     7.  sqrt(): Square root.
     8.  random(): Random number generation.
     9.  exp(), log(): Exponential and logarithmic functions.
@@ -285,7 +285,7 @@ OOPS IN JAVA
     5. Implicit Call: Automatically called in string concatenation.
 
 
-19. SRING CLASS
+19. STRING CLASS
 
     1. Immutability: Once created, a String object's value cannot be changed. Modifications create new String objects.
     2. String Pool: Java maintains a pool of strings for efficiency. When a new string is created, it's checked against the pool for a match to reuse.
@@ -295,3 +295,29 @@ OOPS IN JAVA
     1. Concatenation: Strings can be concatenated using the + operator, but each concatenation creates a new String.
     2. Methods: Provides methods like length(), substring(), equals(), compareTo(), indexOf(), for various operations.
     3. Memory: Being immutable, strings can use more memory when frequently modified.
+ 
+
+20. Final Keywords
+
+    1. Variable: When applied to a variable, it becomes a constant, meaning its value cannot be changed once initialized.
+    2. Efficiency: Using final can lead to performance optimization, as the    compiler can make certain assumptions about final elements.
+    3. Null Safety: A final variable must be initialized before the constructor completes, reducing null pointer errors.
+    4. Immutable Objects: Helps in creating immutable objects in combination with private fields and no setter methods
+
+///OOPS////
+
+
+21. Intro
+    
+    It is made up of 4 functionalities
+    1. Encapsulation : The process of exposing the selected information is known as encapsulation.
+    2. Abstraction : The process of hiding complex details to reduce the complexity of program.
+    3. Inheritance : IN this the entities can inherit the entities from other entities.
+    4. Polymorphism : In this the entities can have more than one form.
+
+22. Encapslatoin:
+    1.Data Hiding: Encapsulation hides internal data, allowing access only through methods.
+    2.Access Modifiers: Uses private, public, protected to control access to class members.
+    3.Getter/Setter: Provides public methods for controlled property access.
+    4.Maintains Integrity: Protects object state from external interference.
+    5.Enhances Modularity: Keeps classes separate and reduces coupling
